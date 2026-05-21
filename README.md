@@ -5,7 +5,7 @@
 **A Curated Collection of Vision-Language Navigation for Unmanned Aerial Vehicles**
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Papers](https://img.shields.io/badge/Papers-10%2B-0984e3?style=for-the-badge&logo=google-scholar&logoColor=white)](README.md)
+[![Papers](https://img.shields.io/badge/Papers-25%2B-0984e3?style=for-the-badge&logo=google-scholar&logoColor=white)](README.md)
 [![Last Commit](https://img.shields.io/github/last-commit/earth-insights/awesome-uav-vln?style=for-the-badge&color=00b894)](https://github.com/earth-insights/awesome-uav-vln/commits)
 [![Stars](https://img.shields.io/github/stars/earth-insights/awesome-uav-vln?style=for-the-badge&color=fdcb6e&logo=github)](https://github.com/earth-insights/awesome-uav-vln/stargazers)
 [![Forks](https://img.shields.io/github/forks/earth-insights/awesome-uav-vln?style=for-the-badge&color=e17055&logo=github)](https://github.com/earth-insights/awesome-uav-vln/network/members)
@@ -31,7 +31,7 @@
 | 📚 | [Survey](#-survey) | Comprehensive surveys and reviews on UAV-VLN |
 | 🚁 | [UAV-VLN Models](#-uav-vln-models) | Vision-Language Navigation for drones and aerial robots |
 | 🧠 | [End-to-End UAV-VLN Models](#-end-to-end-uav-vln-models) |  Trainable models that directly map vision+language to actions |
-| 🗺️ | [Semantic Cognitive Mapping](#️-semantic-cognitive-mapping) |LLM/VLM-based semantic map construction for zero-shot UAV navigation |
+| 🗺️ | [Semantic Cognitive Mapping & Zero Shot](#️-semantic-cognitive-mapping--zero-shot) |LLM/VLM-based semantic map construction for zero-shot UAV navigation |
 | 📊 | [Benchmarks & Datasets](#-benchmarks--datasets) | Evaluation benchmarks & metrics for UAV-VLN |
 | 🎮 | [Simulators](#-simulators) | Simulation platforms for aerial robots |
 | 🔄 | [Sim-to-Real](#-sim-to-real) | Bridging simulation and real-world deployment |
@@ -44,9 +44,11 @@
 
 > [!TIP]
 > **Contributing** — This repository is continuously updated! If you have papers, projects, or resources not yet included, please submit a **Pull Request** or open an **Issue**. Let's build a comprehensive resource for the aerial robotics and AI community!
+>
 > **Entry Template:**
 >```markdown
-> - **[ShortName] Full Paper Title** - Author et al. *Conference Year*📄 [Paper](link) | 💻 [Code](link) | 🎥 [Project](link)
+> - **[ShortName] Full Paper Title** - Author et al. *Conference Year*
+>   - 📄 [Paper](link) | 💻 [Code](link) | 🎥 [Project](link)
 >```
 
 
@@ -55,105 +57,196 @@
 ## 📚 Survey
 
 > **Comprehensive surveys and review papers covering the landscape of uav-vln**
-- [2026]Vision-Language Navigation for Aerial Robots:Towards the Era of Large Language Models[[paper](https://arxiv.org/pdf/2604.07705)]
+- [2026]Vision-Language Navigation for Aerial Robots:Towards the Era of Large Language Models
+  - 📄[paper](https://arxiv.org/pdf/2604.07705)
 - [2025]AeroVerse-Review: Comprehensive survey on aerial embodied vision-and-language navigation[[paper](https://arxiv.org/pdf/2408.15511)]
 ## 🚁 UAV-VLN Models
 > **A complete collection of UAV-VLN methods**
 
 ### 2026
-- **[NavDreamer]NavDreamer: Video Models as Zero-Shot 3D Navigators** - Huang et al. 📄 [Paper](https://arxiv.org/pdf/2602.09765) 
+- **[NavDreamer]NavDreamer: Video Models as Zero-Shot 3D Navigators** - Huang et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2602.09765) 
 
-- **[OnFly]OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency** - Zheng et al. 📄 [Paper](https://arxiv.org/pdf/2603.10682v1) | 💻 [Code](https://github.com/Robotics-STAR-Lab/OnFly) 
+- **[OnFly]OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency** - Zheng et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2603.10682v1) | 💻 [Code](https://github.com/Robotics-STAR-Lab/OnFly) 
 
-- **[AerialVLA] AerialVLA: A Vision-Language-Action Model for UAV Navigation via Minimalist End-to-End Control** - Xu et al. 📄 [Paper](https://arxiv.org/pdf/2603.14363) | 💻 [Code](https://github.com/XuPeng23/AerialVLA)
+- **[AerialVLA] AerialVLA: A Vision-Language-Action Model for UAV Navigation via Minimalist End-to-End Control** - Xu et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2603.14363) | 💻 [Code](https://github.com/XuPeng23/AerialVLA)
 
-- **[AutoFly]AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild** - Sun et al. *ICLR 2026*📄 [Paper](https://arxiv.org/pdf/2602.09657) | 💻 [Code](https://github.com/xiaolousun/AutoFly-VLA) 
+- **[AutoFly]AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild** - Sun et al. *ICLR 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2602.09657) | 💻 [Code](https://github.com/xiaolousun/AutoFly-VLA) 
 
-- **[Fly0]Fly0: Decoupling Semantic Grounding from Geometric Planning for Zero-Shot Aerial Navigation** - Xu et al. [Paper](https://arxiv.org/pdf/2602.15875v1) 
+- **[Fly0]Fly0: Decoupling Semantic Grounding from Geometric Planning for Zero-Shot Aerial Navigation** - Xu et al.
+  - 📄 [Paper](https://arxiv.org/pdf/2602.15875v1) |💻 [Code](https://github.com/xuzhenxing1/Fly0)
 
-- **[AirHunt]AirHunt: Bridging VLM Semantics and Continuous Planning for Efficient Aerial Object Navigation** - Chen et al. 📄 [Paper](https://arxiv.org/pdf/2601.12742)
+- **[AirHunt]AirHunt: Bridging VLM Semantics and Continuous Planning for Efficient Aerial Object Navigation** - Chen et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2601.12742)
 
-- **[APEX]APEX: A Decoupled Memory-based Explorer for Asynchronous Aerial Object Goal Navigation** - Zhang et al. *CVPR 2026*📄 [Paper](https://arxiv.org/pdf/2602.00551) | 💻 [Code]() 
+- **[APEX]APEX: A Decoupled Memory-based Explorer for Asynchronous Aerial Object Goal Navigation** - Zhang et al. *CVPR 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2602.00551) | 💻 [Code](https://github.com/4amGodvzx/apex) 
 
-- **[IndoorUAV]IndoorUAV: Benchmarking Vision-Language UAV Navigation in Continuous Indoor Environments** - Liu et al. *AAAI 2026* 📄 [Paper](https://arxiv.org/pdf/2512.19024) | 💻 [Code](https://www.modelscope.cn/datasets/valyentine/Indoor_UAV) 
+- **[IndoorUAV]IndoorUAV: Benchmarking Vision-Language UAV Navigation in Continuous Indoor Environments** - Liu et al. *AAAI 2026* 
+  - 📄 [Paper](https://arxiv.org/pdf/2512.19024) | 📦 [Datasets](https://www.modelscope.cn/datasets/valyentine/Indoor_UAV) | 💻 [Code](https://github.com/valyentinee/IndoorUAV-Agent)
 
-- **[EZREAL]EZREAL: Enhancing Zero-Shot Outdoor Robot Navigation toward Distant Targets under Varying Visibility** - Zeng et al.📄 [Paper](https://arxiv.org/pdf/2509.13720)
+- **[EZREAL]EZREAL: Enhancing Zero-Shot Outdoor Robot Navigation toward Distant Targets under Varying Visibility** - Zeng et al.
+  - 📄 [Paper](https://arxiv.org/pdf/2509.13720) | 💻 [Code](https://github.com/louiszengCN/EzReal)
 
-- **[OpenFly]Openfly: A comprehensive platform for aerial vision-language navigation** - Gao et al. *ICLR 2026*📄 [Paper](https://arxiv.org/pdf/2502.18041) | 💻 [Code](https://github.com/SHAILAB-IPEC/OpenFly-Platform) 
+- **[OpenFly]Openfly: A comprehensive platform for aerial vision-language navigation** - Gao et al. *ICLR 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2502.18041) | 💻 [Code](https://github.com/SHAILAB-IPEC/OpenFly-Platform) 
   - 📝 **First aerial VLN platform with automated data generation across multiple rendering engines and keyframe-aware agent.**
   - 🌍 **Env**:OpenFly | **Dataset**:OpenFly
   - 🔧 **Method**: End-to-end | **Action**:  Discrete: (DOF：4) | **Backbone**: Llama
 
-- **[HETT] History-Enhanced Two-Stage Transformer for Aerial Vision-and-Language Navigation** -  Ding et al. *AAAI 2026*📄 [Paper](https://arxiv.org/pdf/2512.14222) | 💻 [Code](https://github.com/crotonyl/HETT)
+- **[HETT] History-Enhanced Two-Stage Transformer for Aerial Vision-and-Language Navigation** -  Ding et al. *AAAI 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2512.14222) | 💻 [Code](https://github.com/crotonyl/HETT)
 
 ### 2025
-- **[LongFly]LongFly: Long-Horizon UAV Vision-and-Language Navigation with Spatiotemporal Context Integration** - Jiang et al. *ICLR 2026*📄 [Paper](https://arxiv.org/pdf/2512.22010v1)
+- **[LongFly]LongFly: Long-Horizon UAV Vision-and-Language Navigation with Spatiotemporal Context Integration** - Jiang et al. *ICLR 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2512.22010v1)
 
-- **[See,Point,Fly] See, Point, Fly: A Learning-Free VLM Framework for Universal Unmanned Aerial Navigation** - Hu et al. *CoRL 2025*📄 [Paper](https://arxiv.org/pdf/2509.22653k) | 💻 [Code](https://github.com/Hu-chih-yao/see-point-fly) 
+- **[See,Point,Fly] See, Point, Fly: A Learning-Free VLM Framework for Universal Unmanned Aerial Navigation** - Hu et al. *CoRL 2025*
+  - 📄 [Paper](https://arxiv.org/pdf/2509.22653v1) | 💻 [Code](https://github.com/Hu-chih-yao/see-point-fly) 
 
-- **[CityNavAgent] CityNavAgent: Aerial Vision-and-Language Navigation with Hierarchical Semantic Planning and Global Memory** - Zhang et al. *ACL 2025*📄 [Paper](https://arxiv.org/pdf/2505.05622) | 💻 [Code](https://github.com/EmbodiedCity/CityNavAgent.code) 
+- **[CityNavAgent] CityNavAgent: Aerial Vision-and-Language Navigation with Hierarchical Semantic Planning and Global Memory** - Zhang et al. *ACL 2025*
+  - 📄 [Paper](https://arxiv.org/pdf/2505.05622) | 💻 [Code](https://github.com/EmbodiedCity/CityNavAgent.code) 
 
-- **[CityNav] Vision-and-Language Navigation for UAVs** - Lee et al. *ICCV 2025*📄 [Paper](https://arxiv.org/pdf/2406.14240) | 💻 [Code](https://github.com/water-cookie/citynav) 
+- **[CityNav] Vision-and-Language Navigation for UAVs** - Lee et al. *ICCV 2025*
+  - 📄 [Paper](https://arxiv.org/pdf/2406.14240) | 💻 [Code](https://github.com/water-cookie/citynav) 
   - 📝 **First large-scale real-world dataset for aerial VLN.**
   - 🌍 **Env**:CityFlight  | **Dataset**: CityNav
   - 💡 **“Novel**:Geographic Semantic Map
   
-- **[OpenUAV]Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology** - Wang et al. *ICLR 2025*📄 [Paper](https://arxiv.org/abs/2410.07087) | 💻 [Code](https://github.com/prince687028/TravelUAV) 
+- **[OpenUAV]Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology** - Wang et al. *ICLR 2025*
+  - 📄 [Paper](https://arxiv.org/abs/2410.07087) | 💻 [Code](https://github.com/prince687028/TravelUAV) 
   - 📝 **UAV VLN platform featuring 6-DoF continuous trajectories, assistant-guided benchmark, and MLLM-based hierarchical navigation across 22 diverse scenes (urban, rural, forest, desert).**
   - 🔧 **Method**: End-to-end | **Action**: Discrete (DOF：4) | **Backbone**: Llama
   - 🌍 **Env**: AirSim + UE4 | **Dataset**:OpenUAV
 
 
-- **[AeroDuo]AeroDuo: Aerial Duo for UAV-based Vision and Language Navigation** - Wu et al. *ACMM 2025*📄 [Paper](https://arxiv.org/pdf/2508.15232) | 💻 [Code](https://github.com/buaa-colalab/AeroDuo) 
+- **[AeroDuo]AeroDuo: Aerial Duo for UAV-based Vision and Language Navigation** - Wu et al. *ACMM 2025*
+  - 📄 [Paper](https://arxiv.org/pdf/2508.15232) | 💻 [Code](https://github.com/buaa-colalab/AeroDuo) 
 
 ### 2024
-- **[NavAgent]NavAgent: Multi-scale Urban Street View Fusion For UAV Embodied Vision-and-Language Navigation** - Liu et al.📄 [Paper](https://arxiv.org/pdf/2411.08579)
+- **[NavAgent]NavAgent: Multi-scale Urban Street View Fusion For UAV Embodied Vision-and-Language Navigation** - Liu et al.
+  - 📄 [Paper](https://arxiv.org/pdf/2411.08579)
 
-- **[PIVOT]PIVOT: Iterative Visual Prompting Elicits Actionable Knowledge for VLMs** - Soroush et al. 📄 [Paper](https://arxiv.org/pdf/2402.07872) | 🌍 [Web](https://pivot-prompt.github.io/) 
+- **[PIVOT]PIVOT: Iterative Visual Prompting Elicits Actionable Knowledge for VLMs** - Soroush et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2402.07872) | 🌍 [Web](https://pivot-prompt.github.io/) 
 
-- **[EmbodiedCity]EmbodiedCity: A Benchmark Platform for Embodied Agent in Real-world City Environment** - Gao et al. 📄 [Paper](https://arxiv.org/pdf/2410.09604)| 💻 [Code](https://github.com/tsinghua-fib-lab/EmbodiedCity) 
+- **[EmbodiedCity]EmbodiedCity: A Benchmark Platform for Embodied Agent in Real-world City Environment** - Gao et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2410.09604)| 💻 [Code](https://github.com/tsinghua-fib-lab/EmbodiedCity) 
 
-- **[TypeFly]TypeFly: Flying Drones with Large Language Model** - Chen et al. 📄 [Paper](https://arxiv.org/pdf/2312.14950) | 💻 [Code](https://github.com/typefly/TypeFly) 
+- **[TypeFly]TypeFly: Flying Drones with Large Language Model** - Chen et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2312.14950) | 💻 [Code](https://github.com/typefly/TypeFly) 
 
 ### 2023
 
-- **[AerialVLN] Vision-and-Language Navigation for UAVs** - Zhang et al. *ICCV 2023*📄 [Paper](https://arxiv.org/pdf/2308.06735) | 💻 [Code](https://github.com/AirVLN/AirVLN) 
+- **[AerialVLN] Vision-and-Language Navigation for UAVs** - Zhang et al. *ICCV 2023*
+  - 📄 [Paper](https://arxiv.org/pdf/2308.06735) | 💻 [Code](https://github.com/AirVLN/AirVLN) 
   - 📝 **Proposes the first large-scale UAV-VLN benchmark, including simulator, dataset, and baselines.**
   - 🔧 **Method**: End-to-end | **Action**: Discrete (DOF：4) | **Backbone**: CMA
   - 🌍 **Env**: AirSim + UE4 | **Dataset**: AerialVLN/AerialVLN-S
 
-- **[AVDN]Aerial Vision-and-Dialog Navigation** - Fan et al. *ACL 2023*📄 [Paper](https://arxiv.org/pdf/2205.12219) | 💻 [Code](https://sites.google.com/view/aerial-vision-and-dialog/home) 
+- **[AVDN]Aerial Vision-and-Dialog Navigation** - Fan et al. *ACL 2023*
+  - 📄 [Paper](https://arxiv.org/pdf/2205.12219) | 💻 [Code](https://sites.google.com/view/aerial-vision-and-dialog/home) 
 
 ## 🧠 End-to-End UAV-VLN Models
 > **Trainable models that directly map vision+language to actions**
-- **[OpenFly]Openfly: A comprehensive platform for aerial vision-language navigation** - Gao et al. *ICLR 2026*📄 [Paper](https://arxiv.org/pdf/2502.18041) | 💻 [Code](https://github.com/SHAILAB-IPEC/OpenFly-Platform) 
 
-- **[CityNav] Vision-and-Language Navigation for UAVs** - Lee et al. *ICCV 2025*📄 [Paper](https://arxiv.org/pdf/2406.14240) | 💻 [Code](https://github.com/water-cookie/citynav) 
+- **[AerialVLA] AerialVLA: A Vision-Language-Action Model for UAV Navigation via Minimalist End-to-End Control** - Xu et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2603.14363) | 💻 [Code](https://github.com/XuPeng23/AerialVLA)
 
-- **[OpenUAV]Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology** - Wang et al. *ICLR 2025*📄 [Paper](https://arxiv.org/abs/2410.07087) | 💻 [Code](https://github.com/prince687028/TravelUAV) 
+- **[AutoFly]AutoFly: Vision-Language-Action Model for UAV Autonomous Navigation in the Wild** - Sun et al. *ICLR 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2602.09657) | 💻 [Code](https://github.com/xiaolousun/AutoFly-VLA) 
 
-- **[AeroDuo]AeroDuo: Aerial Duo for UAV-based Vision and Language Navigation** - Wu et al. *ACMM 2025*📄 [Paper](https://arxiv.org/pdf/2508.15232) | 💻 [Code](https://github.com/buaa-colalab/AeroDuo) 
+- **[APEX]APEX: A Decoupled Memory-based Explorer for Asynchronous Aerial Object Goal Navigation** - Zhang et al. *CVPR 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2602.00551) | 💻 [Code](https://github.com/4amGodvzx/apex) 
 
-- **[AerialVLN] Vision-and-Language Navigation for UAVs** - Zhang et al. *ICCV 2023*📄 [Paper](https://arxiv.org/pdf/2308.06735) | 💻 [Code](https://github.com/AirVLN/AirVLN) 
+- **[IndoorUAV]IndoorUAV: Benchmarking Vision-Language UAV Navigation in Continuous Indoor Environments** - Liu et al. *AAAI 2026* 
+  - 📄 [Paper](https://arxiv.org/pdf/2512.19024) | 📦 [Datasets](https://www.modelscope.cn/datasets/valyentine/Indoor_UAV) | 💻 [Code](https://github.com/valyentinee/IndoorUAV-Agent)
 
-- **[AVDN]Aerial Vision-and-Dialog Navigation** - Fan et al. *ACL 2023*📄 [Paper](https://arxiv.org/pdf/2205.12219) | 💻 [Code](https://sites.google.com/view/aerial-vision-and-dialog/home) 
+- **[OpenFly]Openfly: A comprehensive platform for aerial vision-language navigation** - Gao et al. *ICLR 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2502.18041) | 💻 [Code](https://github.com/SHAILAB-IPEC/OpenFly-Platform) 
 
-## 🗺️ Semantic Cognitive Mapping
-> **Methods that explicitly build semantic-aware spatial representations for zero-shot or training-free navigation.**
+- **[HETT] History-Enhanced Two-Stage Transformer for Aerial Vision-and-Language Navigation** -  Ding et al. *AAAI 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2512.14222) | 💻 [Code](https://github.com/crotonyl/HETT)
+
+- **[LongFly]LongFly: Long-Horizon UAV Vision-and-Language Navigation with Spatiotemporal Context Integration** - Jiang et al. *ICLR 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2512.22010v1)
+
+- **[CityNav] Vision-and-Language Navigation for UAVs** - Lee et al. *ICCV 2025*
+  - 📄 [Paper](https://arxiv.org/pdf/2406.14240) | 💻 [Code](https://github.com/water-cookie/citynav) 
+
+- **[OpenUAV]Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology** - Wang et al. *ICLR 2025*
+  - 📄 [Paper](https://arxiv.org/abs/2410.07087) | 💻 [Code](https://github.com/prince687028/TravelUAV) 
+
+- **[AeroDuo]AeroDuo: Aerial Duo for UAV-based Vision and Language Navigation** - Wu et al. *ACMM 2025*
+  - 📄 [Paper](https://arxiv.org/pdf/2508.15232) | 💻 [Code](https://github.com/buaa-colalab/AeroDuo) 
+
+- **[NavAgent]NavAgent: Multi-scale Urban Street View Fusion For UAV Embodied Vision-and-Language Navigation** - Liu et al.
+  - 📄 [Paper](https://arxiv.org/pdf/2411.08579)
+
+- **[EmbodiedCity]EmbodiedCity: A Benchmark Platform for Embodied Agent in Real-world City Environment** - Gao et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2410.09604)| 💻 [Code](https://github.com/tsinghua-fib-lab/EmbodiedCity) 
+
+- **[AerialVLN] Vision-and-Language Navigation for UAVs** - Zhang et al. *ICCV 2023*
+  - 📄 [Paper](https://arxiv.org/pdf/2308.06735) | 💻 [Code](https://github.com/AirVLN/AirVLN) 
+
+- **[AVDN]Aerial Vision-and-Dialog Navigation** - Fan et al. *ACL 2023*
+  - 📄 [Paper](https://arxiv.org/pdf/2205.12219) | 💻 [Code](https://sites.google.com/view/aerial-vision-and-dialog/home) 
+
+## 🗺️ Semantic Cognitive Mapping & Zero Shot
+> **Methods that explicitly build semantic-aware spatial representations or propose a pipeline for zero-shot or training-free navigation.**
+
+- **[NavDreamer]NavDreamer: Video Models as Zero-Shot 3D Navigators** - Huang et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2602.09765) 
+
+- **[OnFly]OnFly: Onboard Zero-Shot Aerial Vision-Language Navigation toward Safety and Efficiency** - Zheng et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2603.10682v1) | 💻 [Code](https://github.com/Robotics-STAR-Lab/OnFly) 
+
+- **[Fly0]Fly0: Decoupling Semantic Grounding from Geometric Planning for Zero-Shot Aerial Navigation** - Xu et al.
+  - 📄 [Paper](https://arxiv.org/pdf/2602.15875v1) |💻 [Code](https://github.com/xuzhenxing1/Fly0)
+
+- **[AirHunt]AirHunt: Bridging VLM Semantics and Continuous Planning for Efficient Aerial Object Navigation** - Chen et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2601.12742)
+
+- **[EZREAL]EZREAL: Enhancing Zero-Shot Outdoor Robot Navigation toward Distant Targets under Varying Visibility** - Zeng et al.
+  - 📄 [Paper](https://arxiv.org/pdf/2509.13720) | 💻 [Code](https://github.com/louiszengCN/EzReal)
+
+- **[See,Point,Fly] See, Point, Fly: A Learning-Free VLM Framework for Universal Unmanned Aerial Navigation** - Hu et al. *CoRL 2025*
+  - 📄 [Paper](https://arxiv.org/pdf/2509.22653v1) | 💻 [Code](https://github.com/Hu-chih-yao/see-point-fly)
+
+- **[CityNavAgent] CityNavAgent: Aerial Vision-and-Language Navigation with Hierarchical Semantic Planning and Global Memory** - Zhang et al. *ACL 2025*
+  - 📄 [Paper](https://arxiv.org/pdf/2505.05622) | 💻 [Code](https://github.com/EmbodiedCity/CityNavAgent.code) 
+
+- **[PIVOT]PIVOT: Iterative Visual Prompting Elicits Actionable Knowledge for VLMs** - Soroush et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2402.07872) | 🌍 [Web](https://pivot-prompt.github.io/) 
+
+- **[TypeFly]TypeFly: Flying Drones with Large Language Model** - Chen et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2312.14950) | 💻 [Code](https://github.com/typefly/TypeFly) 
 
 ## 📊 Benchmarks & Datasets
 > **Evaluation benchmarks and datasets specific to UAV-VLN.**
-- **[OpenFly]Openfly: A comprehensive platform for aerial vision-language navigation** - Gao et al. *ICLR 2026*📄 [Paper](https://arxiv.org/pdf/2502.18041) | 💻 [Code](https://github.com/SHAILAB-IPEC/OpenFly-Platform) 
+- **[OpenFly]Openfly: A comprehensive platform for aerial vision-language navigation** - Gao et al. *ICLR 2026*
+  - 📄 [Paper](https://arxiv.org/pdf/2502.18041) | 💻 [Code](https://github.com/SHAILAB-IPEC/OpenFly-Platform) 
 
-- **[CityNav] Vision-and-Language Navigation for UAVs** - Lee et al. *ICCV 2025*📄 [Paper](https://arxiv.org/pdf/2406.14240) | 💻 [Code](https://github.com/water-cookie/citynav) 
+- **[CityNav] Vision-and-Language Navigation for UAVs** - Lee et al. *ICCV 2025*
+  - 📄 [Paper](https://arxiv.org/pdf/2406.14240) | 💻 [Code](https://github.com/water-cookie/citynav) 
 
-- **[OpenUAV]Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology** - Wang et al. *ICLR 2025*📄 [Paper](https://arxiv.org/abs/2410.07087) | 💻 [Code](https://github.com/prince687028/TravelUAV) 
+- **[OpenUAV]Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology** - Wang et al. *ICLR 2025*
+  - 📄 [Paper](https://arxiv.org/abs/2410.07087) | 💻 [Code](https://github.com/prince687028/TravelUAV) 
 
-- **[AeroDuo]AeroDuo: Aerial Duo for UAV-based Vision and Language Navigation** - Wu et al. *ACMM 2025*📄 [Paper](https://arxiv.org/pdf/2508.15232) | 💻 [Code](https://github.com/buaa-colalab/AeroDuo) 
+- **[AeroDuo]AeroDuo: Aerial Duo for UAV-based Vision and Language Navigation** - Wu et al. *ACMM 2025*
+  - 📄 [Paper](https://arxiv.org/pdf/2508.15232) | 💻 [Code](https://github.com/buaa-colalab/AeroDuo) 
 
-- **[AerialVLN] Vision-and-Language Navigation for UAVs** - Zhang et al. *ICCV 2023*📄 [Paper](https://arxiv.org/pdf/2308.06735) | 💻 [Code](https://github.com/AirVLN/AirVLN) 
+- **[EmbodiedCity]EmbodiedCity: A Benchmark Platform for Embodied Agent in Real-world City Environment** - Gao et al. 
+  - 📄 [Paper](https://arxiv.org/pdf/2410.09604)| 💻 [Code](https://github.com/tsinghua-fib-lab/EmbodiedCity) 
 
-- **[AVDN]Aerial Vision-and-Dialog Navigation** - Fan et al. *ACL 2023*📄 [Paper](https://arxiv.org/pdf/2205.12219) | 💻 [Code](https://sites.google.com/view/aerial-vision-and-dialog/home) 
+- **[AerialVLN] Vision-and-Language Navigation for UAVs** - Zhang et al. *ICCV 2023*
+  - 📄 [Paper](https://arxiv.org/pdf/2308.06735) | 💻 [Code](https://github.com/AirVLN/AirVLN) 
+
+- **[AVDN]Aerial Vision-and-Dialog Navigation** - Fan et al. *ACL 2023*
+  - 📄 [Paper](https://arxiv.org/pdf/2205.12219) | 💻 [Code](https://sites.google.com/view/aerial-vision-and-dialog/home) 
 
 ### 📦 Datasets
 | Dataset | Environment | Scale | Instruction Granularity | Sensor | Type | Notes |
