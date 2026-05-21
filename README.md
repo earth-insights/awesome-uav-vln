@@ -44,7 +44,7 @@
 
 > [!TIP]
 > **Contributing** — This repository is continuously updated! If you have papers, projects, or resources not yet included, please submit a **Pull Request** or open an **Issue**. Let's build a comprehensive resource for the aerial robotics and AI community!
->
+>    
 > **Entry Template:**
 >```markdown
 > - **[ShortName] Full Paper Title** - Author et al. *Conference Year*
