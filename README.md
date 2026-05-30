@@ -91,14 +91,17 @@
 
 - **[AirHunt]AirHunt: Bridging VLM Semantics and Continuous Planning for Efficient Aerial Object Navigation** - Chen et al. 
   - 📄 [Paper](https://arxiv.org/pdf/2601.12742)
+  - 📝**Employs a dual-pathway asynchronous architecture with a 3D value map bridging VLM semantic inference and continuous planning, featuring active keyframe selection and semantic-geometric coherent planning for zero-shot aerial object search.**
+  - 🔧 **Method**: GSM
 
 - **[APEX]APEX: A Decoupled Memory-based Explorer for Asynchronous Aerial Object Goal Navigation** - Zhang et al. *CVPR 2026*
   - 📄 [Paper](https://arxiv.org/pdf/2602.00551) | 💻 [Code](https://github.com/4amGodvzx/apex) 
-  - **Employs a 3D dynamic spatio-semantic map with attraction, exploration, and obstacle channels, decoupled RL-based action decision, and parallel asynchronous execution for efficient aerial object goal navigation.**
+  - 📝 **Employs a 3D dynamic spatio-semantic map with attraction, exploration, and obstacle channels, decoupled RL-based action decision, and parallel asynchronous execution for efficient aerial object goal navigation.**
   - 🔧 **Method**: GSM+RL
 
 - **[IndoorUAV]IndoorUAV: Benchmarking Vision-Language UAV Navigation in Continuous Indoor Environments** - Liu et al. *AAAI 2026* 
   - 📄 [Paper](https://arxiv.org/pdf/2512.19024) |💻 [Code](https://github.com/valyentinee/IndoorUAV-Agent)|  📦 [Datasets](https://www.modelscope.cn/datasets/valyentine/Indoor_UAV) 
+   - 🔧 **Method**: End-to-end 
 
 - **[OpenFly]Openfly: A comprehensive platform for aerial vision-language navigation** - Gao et al. *ICLR 2026*
   - 📄 [Paper](https://arxiv.org/pdf/2502.18041) | 💻 [Code](https://github.com/SHAILAB-IPEC/OpenFly-Platform) 
@@ -108,16 +111,23 @@
 
 - **[HETT] History-Enhanced Two-Stage Transformer for Aerial Vision-and-Language Navigation** -  Ding et al. *AAAI 2026*
   - 📄 [Paper](https://arxiv.org/pdf/2512.14222) | 💻 [Code](https://github.com/crotonyl/HETT)
+  - 📝 **Integrates a coarse-to-fine two-stage transformer with a historical grid map that stores fine-grained visual features, enabling long-horizon aerial VLN through global target prediction followed by local action refinement.**
   - 🔧 **Method**: End-to-end 
+
 ### 2025
 - **[LongFly]LongFly: Long-Horizon UAV Vision-and-Language Navigation with Spatiotemporal Context Integration** - Jiang et al. *ICLR 2026*
   - 📄 [Paper](https://arxiv.org/pdf/2512.22010v1)
+  - 📝 **Proposes a spatiotemporal context modeling framework with slot-based historical image compression and trajectory encoding, compressing multi-view history into compact representations for long-horizon UAV VLN**
+  - 🔧 **Method**: End-to-end | **Backbone**: Attention/GRU
 
 - **[See,Point,Fly] See, Point, Fly: A Learning-Free VLM Framework for Universal Unmanned Aerial Navigation** - Hu et al. *CoRL 2025*
   - 📄 [Paper](https://arxiv.org/pdf/2509.22653v1) | 💻 [Code](https://github.com/Hu-chih-yao/see-point-fly) 
+  - 📝 **Reformulates action prediction as 2D spatial grounding by prompting a VLM to output pixel coordinates, which are unprojected to 3D displacements via a pinhole model for zero-shot UAV navigation.**
+  - 🔧 **Method**: Zero-shot
 
 - **[CityNavAgent] CityNavAgent: Aerial Vision-and-Language Navigation with Hierarchical Semantic Planning and Global Memory** - Zhang et al. *ACL 2025*
   - 📄 [Paper](https://arxiv.org/pdf/2505.05622) | 💻 [Code](https://github.com/EmbodiedCity/CityNavAgent.code) 
+  - 🔧 **Method**: GSM
 
 - **[CityNav] Vision-and-Language Navigation for UAVs** - Lee et al. *ICCV 2025*
   - 📄 [Paper](https://arxiv.org/pdf/2406.14240) | 💻 [Code](https://github.com/water-cookie/citynav) 
@@ -131,10 +141,9 @@
   - 🔧 **Method**: End-to-end | **Action**: Discrete (DOF：4) | **Backbone**: Llama
   - 🌍 **Env**: AirSim + UE4 | **Dataset**:OpenUAV
 
-
 - **[AeroDuo]AeroDuo: Aerial Duo for UAV-based Vision and Language Navigation** - Wu et al. *ACMM 2025*
   - 📄 [Paper](https://arxiv.org/pdf/2508.15232) | 💻 [Code](https://github.com/buaa-colalab/AeroDuo) 
-
+  - 🔧 **Method**: End-to-end 
 ### 2024
 - **[NavAgent]NavAgent: Multi-scale Urban Street View Fusion For UAV Embodied Vision-and-Language Navigation** - Liu et al.
   - 📄 [Paper](https://arxiv.org/pdf/2411.08579)
