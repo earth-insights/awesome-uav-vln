@@ -59,7 +59,8 @@
 > **Comprehensive surveys and review papers covering the landscape of uav-vln**
 - [2026]Vision-Language Navigation for Aerial Robots:Towards the Era of Large Language Models
   - 📄[paper](https://arxiv.org/pdf/2604.07705)
-- [2025]AeroVerse-Review: Comprehensive survey on aerial embodied vision-and-language navigation[[paper](https://arxiv.org/pdf/2408.15511)]
+- [2025]AeroVerse-Review: Comprehensive survey on aerial embodied vision-and-language navigation
+  - 📄[paper](https://arxiv.org/pdf/2408.15511)
 ## 🚁 UAV-VLN Models
 > **A complete collection of UAV-VLN methods**
 
